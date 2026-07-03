@@ -1,0 +1,30 @@
+<svg viewBox="0 0 2400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="beltFabric" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161616" />
+      <stop offset="45%" stop-color="#0c0c0c" />
+      <stop offset="55%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#181818" />
+    </linearGradient>
+  </defs>
+
+  <!-- Corpo da faixa: ondulações sutis nas bordas, ponta arredondada à esquerda -->
+  <path
+    id="belt-body"
+    fill="url(#beltFabric)"
+    d="M2400,110 C2300,95 2200,125 2100,110 C2000,95 1900,125 1800,110 C1700,95 1600,125 1500,110
+       C1400,95 1300,125 1200,110 C1100,95 1000,125 900,110 C800,95 700,125 600,110
+       C500,95 420,118 350,108 C300,102 280,100 260,100 C200,98 150,105 110,130
+       C70,155 55,190 55,200 C55,210 70,245 110,270 C150,295 200,302 260,300
+       C280,300 300,298 350,292 C420,282 500,305 600,290 C700,275 800,305 900,290
+       C1000,275 1100,305 1200,290 C1300,275 1400,305 1500,290 C1600,275 1700,305 1800,290
+       C1900,275 2000,305 2100,290 C2200,275 2300,305 2400,290 Z"
+  />
+
+  <!-- Tarja vermelha de graduação, costurada próxima à ponta -->
+  <g id="belt-stripe">
+    <rect x="140" y="150" width="170" height="100" rx="14" transform="rotate(-4 225 200)" fill="#C8102E" />
+    <line x1="150" y1="158" x2="300" y2="150" stroke="#9c0c20" stroke-width="2" stroke-dasharray="6 5" opacity="0.5" />
+    <line x1="150" y1="246" x2="300" y2="250" stroke="#9c0c20" stroke-width="2" stroke-dasharray="6 5" opacity="0.5" />
+  </g>
+</svg>

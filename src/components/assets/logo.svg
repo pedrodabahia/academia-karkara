@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Emblema: um "K" geométrico minimalista construído com 3 traços, remetendo a um golpe/postura -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
+    <line x1="40" y1="20" x2="40" y2="70" />
+    <line x1="40" y1="45" x2="68" y2="20" />
+    <line x1="40" y1="45" x2="68" y2="70" />
+  </g>
+  <!-- Pequeno acento vermelho, ecoando a tarja da faixa -->
+  <rect x="36" y="44" width="8" height="8" rx="2" fill="#C8102E" />
+
+  <!-- Wordmark -->
+  <text
+    x="92"
+    y="58"
+    font-family="Helvetica Neue, Arial, sans-serif"
+    font-size="34"
+    font-weight="600"
+    letter-spacing="3"
+    fill="#FFFFFF"
+  >
+    KARKARÁ
+  </text>
+  <text
+    x="93"
+    y="80"
+    font-family="Helvetica Neue, Arial, sans-serif"
+    font-size="13"
+    letter-spacing="6"
+    fill="#9A9A9A"
+  >
+    ACADEMIA DE ARTES MARCIAIS
+  </text>
+</svg>

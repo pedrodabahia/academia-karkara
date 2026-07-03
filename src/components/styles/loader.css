@@ -1,0 +1,94 @@
+/* loader.css
+   ----------
+   Mantém o fundo branco visível antes da faixa cobrir a tela: a própria
+   faixa (opaca, escura) é responsável por "esconder" o branco — não há
+   nenhum fade de cor de fundo, conforme o briefing.
+
+   Toda movimentação usa `transform`, nunca propriedades de layout (left,
+   top, width...), para evitar reflow e manter 60fps em qualquer device.
+*/
+
+.loader-root {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff; /* fundo branco inicial */
+  overflow: hidden;
+  z-index: 9999;
+  pointer-events: none; /* loader é puramente visual, não bloqueia cliques */
+}
+
+/* Wrapper transladado pelo GSAP. Largura maior que 100vw garante que a
+   faixa consiga cobrir a tela inteira antes de começar a saída. */
+.belt-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 240vw;
+  height: 56vw; /* mantém a proporção do viewBox (2400 x 400 ≈ 6:1) */
+  max-height: 70vh;
+  transform: translateY(-50%);
+  will-change: transform;
+}
+
+.belt-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Logotipo, centrado, oculto por padrão (controlado via GSAP) */
+.loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(60vw, 340px);
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+}
+
+.loader-logo svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.loader-logo__word {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  fill: #ffffff;
+}
+
+.loader-logo__sub {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 6px;
+  fill: #9a9a9a;
+}
+
+/* Responsividade: em telas estreitas, a faixa ainda precisa ser alta o
+   bastante para cobrir a viewport visualmente sem distorcer o tecido. */
+@media (max-width: 768px) {
+  .belt-wrap {
+    width: 280vw;
+    height: 70vw;
+  }
+
+  .loader-logo {
+    width: min(75vw, 260px);
+  }
+}
+
+/* Acessibilidade: usuários com "prefers-reduced-motion" pulam a coreografia
+   (tratado também em JS, no hook) — aqui garantimos que, mesmo que algum
+   CSS de transição externo exista, ele seja neutralizado. */
+@media (prefers-reduced-motion: reduce) {
+  .belt-wrap,
+  .loader-logo {
+    transition: none !important;
+  }
+}
+

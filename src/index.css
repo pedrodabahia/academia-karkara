@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "capture";
+  src: url("./assets/fontes/Captureit.ttf");
+}
+@theme{
+   --font-capture: "capture", san-serif;
+}
+
+html{
+  background-color: black;
+  transition: 1s;
+  overflow-x: hidden;
+}
+.loader-root{
+  transition: all 1s ease;
+}
