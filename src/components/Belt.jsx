@@ -17,9 +17,9 @@ const Belt = forwardRef(function Belt({ wrapperRef, tipRef }, ref) {
       >
         <rect
         x="3500"
-        y="-600"
+        y="-3000"
         width="5000"
-        height="4000"
+        height="5000"
         fill="black"
         />
         <defs>
