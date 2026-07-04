@@ -61,3 +61,10 @@ button{
           .kk-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
           .kk-card-h { height: 340px !important; }
         }
+
+     @media (max-width: 768px) {
+  .belt-svg {
+    transform: scaleY(2.3);
+    transform-origin: center;
+  }
+}

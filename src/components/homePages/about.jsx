@@ -44,14 +44,14 @@ export default function About(){
 
 
     <div
-      className="relative w-[220px] h-[280px] sm:w-[260px] sm:h-[340px] lg:w-[300px] lg:h-[400px] shrink-0"
+      className="relative w-[260px] h-[320px] sm:w-[260px] sm:h-[340px] lg:w-[300px] lg:h-[400px] shrink-0"
         onMouseEnter={() => setFrente(false)}
         onMouseLeave={() => setFrente(true)}
         onTouchStart={() => setFrente(false)}
     >
       <img
         src={img}
-        className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-1000
+        className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-1000 shadow-[0_0_10px_black]
         ${
           frente
             ? "z-10 rotate-6 translate-x-0"
@@ -61,7 +61,7 @@ export default function About(){
 
       <img
         src={img2}
-        className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-1000
+        className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-1000 shadow-[0_0_10px_black]
         ${
           frente
             ? "z-0 -rotate-6 translate-x-6"
