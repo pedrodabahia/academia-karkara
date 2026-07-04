@@ -5,11 +5,11 @@ import { Flame, Shield, Dumbbell, Swords, HandFist } from 'lucide-react';
 // (uma foto sua, ou de um banco de imagens de uso livre como Unsplash/Pexels).
 // Sem imagem definida, entra um gradiente de placeholder no lugar.
 const modalities = [
-  { name: 'Muay Thai', Icon: Flame, image: "/image/modle2.png" },
-  { name: 'Jiu-Jitsu', Icon: Shield, image: "/image/modle5.png" },
-  { name: 'Musculação', Icon: Dumbbell, image: "/image/modle1.png" },
-  { name: 'MMA', Icon: Swords, image: "/image/modle4.png" },
-  { name: 'Boxe', Icon: HandFist, image: "/image/modle3.png" },
+  { name: 'Muay Thai', Icon: Flame, image: "/image/modle2.webp" },
+  { name: 'Jiu-Jitsu', Icon: Shield, image: "/image/modle5.webp" },
+  { name: 'Musculação', Icon: Dumbbell, image: "/image/modle1.webp" },
+  { name: 'MMA', Icon: Swords, image: "/image/modle4.webp" },
+  { name: 'Boxe', Icon: HandFist, image: "/image/modle3.webp" },
 ];
 
 function Card({ name, Icon, image, delay }) {
