@@ -4,7 +4,7 @@ const CARDS = [
     title: "Ambiente Familiar",
     desc: "Aqui você não é apenas um aluno. Faz parte de uma família que incentiva, apoia e evolui junta.",
     image:
-      "https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1200&q=80",
+      "/image/jiu1.webp",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor">
         <path d="M12 21s-7.5-4.9-10-9.6C.3 7.8 2.3 4 6 4c2.2 0 3.7 1.2 6 3 2.3-1.8 3.8-3 6-3 3.7 0 5.7 3.8 4 7.4C19.5 16.1 12 21 12 21z" />
@@ -16,7 +16,7 @@ const CARDS = [
     title: "Professores Qualificados",
     desc: "Treine com profissionais experientes que vivem as artes marciais e acompanham sua evolução de perto.",
     image:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80",
+      "/image/jiu2.webp",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor">
         <path d="M12 3l2.4 4.9L20 9l-4 3.9.9 5.5L12 15.9 7.1 18.4 8 12.9 4 9l5.6-1.1L12 3z" />
@@ -40,7 +40,7 @@ const CARDS = [
     title: "Treinos para Todos os Níveis",
     desc: "Do iniciante ao atleta de competição, nossos treinos respeitam seu ritmo e levam você ao próximo nível.",
     image:
-      "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=1200&q=80",
+      "/image/competidores/samuel.webp",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" stroke="currentColor">
         <path d="M12 2c1 3-2 4-2 7a4 4 0 008 0c0-1-.5-2-1-3 1.5 1 3 3 3 6a6 6 0 11-12 0c0-4 2-6 4-10z" />

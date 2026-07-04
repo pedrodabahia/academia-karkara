@@ -1,49 +1,107 @@
-export default COMPETDORES = [
+export const COMPETIDORES = [
 
  {
     id: "l1",
-    name: "Rafael Souza",
-    category: "Muay Thai",
+    name: "Danilo Morais",
+    category: "MMA",
     title: "Campeão Estadual 2023",
     image:
-      "/image/competidores/samuel.png",
+      "/image/competidores/danilo.webp",
   },
   {
     id: "l2",
-    name: "Ana Beatriz",
-    category: "Jiu-Jitsu · Faixa-roxa",
+    name: "Luiza Lima",
+    category: "MMA",
     title: "Vice-campeã Nacional 2023",
     image:
-      "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
+      "/image/competidores/luiza.webp",
   },
   {
     id: "l3",
-    name: "Diego Farias",
-    category: "MMA",
+    name: "Pedro Matos",
+    category: "Jiu Jitsu",
     title: "3x Campeão Regional",
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+      "/image/competidores/pedro.webp",
   },
   {
     id: "l4",
-    name: "Lucas Andrade",
-    category: "Jiu-Jitsu · Faixa-marrom",
+    name: "Marciely Soares",
+    category: "Muay Thai",
     title: "Campeão Baiano 2024",
     image:
-      "https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80",
+      "/image/competidores/marciely.webp",
   },
   {
     id: "l5",
-    name: "Juliana Reis",
+    name: "Samuel",
     category: "Muay Thai",
     title: "Campeã Nordestina 2022",
     image:
-      "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800&q=80",
+      "/image/competidores/samuel.webp",
   },
-
-
-
-
-
-
+    {
+    id: "l6",
+    name: "André Lopes",
+    category: "Boxe",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/andre.webp",
+  },
+    {
+    id: "l7",
+    name: "Elias Porto",
+    category: "Boxe",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/elias.webp",
+  },
+    {
+    id: "l8",
+    name: "Gebson Santos",
+    category: "Muay Thai",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/gebson.webp",
+  },
+    {
+    id: "l9",
+    name: "Paulo Nascimento",
+    category: "Boxe",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/paulo.webp",
+  },
+    {
+    id: "l10",
+    name: "Theo",
+    category: "Boxe",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/theo.webp",
+  },
+    {
+    id: "l11",
+    name: "Benícios",
+    category: "Muay Thai",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/benicios.webp",
+  },
+    {
+    id: "l12",
+    name: "Rafael Xavier",
+    category: "Muay Thai",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/rafael.webp",
+  },
+    {
+    id: "l13",
+    name: "Mario Lopes",
+    category: "Muay Thai",
+    title: "Campeã Nordestina 2022",
+    image:
+      "/image/competidores/romario.webp",
+  }
 ]

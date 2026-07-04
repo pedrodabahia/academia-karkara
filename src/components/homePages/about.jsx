@@ -1,6 +1,6 @@
 import FaixaDados from '../hooks/faixaDados'
-import img from '/image/sobre.png'
-import img2 from '/image/sobre2.png'
+import img from '/image/sobre.webp'
+import img2 from '/image/sobre2.webp'
 import { useState } from "react";
 
 export default function About(){

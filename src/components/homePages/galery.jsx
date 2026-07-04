@@ -1,86 +1,14 @@
 import { useState } from "react";
+import { FOTOS } from "../hooks/fotosGaleria";
 
 const FILTERS = [
   { id: "todas", label: "Todas" },
   { id: "muay-thai", label: "Muay Thai" },
   { id: "jiu-jitsu", label: "Jiu-Jitsu" },
-  { id: "grad-muay-thai", label: "Graduações Muay Thai" },
-  { id: "grad-jiu-jitsu", label: "Graduações Jiu-Jitsu" },
-  { id: "competidores", label: "Competidores" },
+  { id: "grad-muay-thai", label: "Graduações Muay Thai" }
 ];
 
-const PHOTOS = [
-  {
-    id: 1,
-    category: "muay-thai",
-    label: "Muay Thai",
-    image:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 2,
-    category: "muay-thai",
-    label: "Muay Thai",
-    image:
-      "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 3,
-    category: "muay-thai",
-    label: "Muay Thai",
-    image:
-      "https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 4,
-    category: "jiu-jitsu",
-    label: "Jiu-Jitsu",
-    image:
-      "https://images.unsplash.com/photo-1583473848882-f9a5bc7fd2ee?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 5,
-    category: "jiu-jitsu",
-    label: "Jiu-Jitsu",
-    image:
-      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 6,
-    category: "jiu-jitsu",
-    label: "Jiu-Jitsu",
-    image:
-      "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 7,
-    category: "grad-muay-thai",
-    label: "Graduação Muay Thai",
-    image:
-      "https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 8,
-    category: "grad-muay-thai",
-    label: "Graduação Muay Thai",
-    image:
-      "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 9,
-    category: "grad-jiu-jitsu",
-    label: "Graduação Jiu-Jitsu",
-    image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 10,
-    category: "grad-jiu-jitsu",
-    label: "Graduação Jiu-Jitsu",
-    image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80",
-  },
-];
+const PHOTOS = FOTOS;
 
 function PhotoCard({ photo, index }) {
   return (

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Trophy, Medal } from "lucide-react";
-import competidoresVal from "./competidoresVal";
+import { COMPETIDORES} from "./competidoresVal";
 
 const WHATSAPP_NUMBER = "5573999649599";
 const WHATSAPP_MSG = encodeURIComponent(
@@ -12,10 +12,10 @@ const DESTAQUE = {
   category: "Jiu-Jitsu · Faixa-preta",
   title: "Campeão Brasileiro 2019 e 2022",
   image:
-    "https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1200&q=80",
+    "/image/competidores/professor.webp",
 };
 
-const LUTADORES = competidoresVal;
+const LUTADORES = COMPETIDORES;
 function LutadorCard({ l, i }) {
   return (
     <motion.div
@@ -84,12 +84,12 @@ export default function HallDaFama() {
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="
-            relative mb-6 h-[280px] overflow-hidden rounded-[20px] border border-[#C2913D]/40
+            relative mb-6 h-[280px] overflow-hidden rounded-[20px] border border-blue-400/40
             sm:h-[340px]
           "
         >
           <div
-            className="absolute inset-0 bg-cover bg-[position:50%_25%] grayscale-[15%] contrast-[1.05]"
+            className="absolute inset-0 bg-cover bg-[position:50%_5%] grayscale-[15%] contrast-[1.05]"
             style={{ backgroundImage: `url('${DESTAQUE.image}')` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-black/20" />
