@@ -12,7 +12,6 @@ const Belt = forwardRef(function Belt({ wrapperRef, tipRef }, ref) {
         ref={ref}
         className="belt-svg"
         viewBox="0 0 3500 400"
-        preserveAspectRatio="none"
         style={{overflow : "visible"}}
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -44,22 +43,30 @@ const Belt = forwardRef(function Belt({ wrapperRef, tipRef }, ref) {
           fill="url(#beltFabric)"
         />
 
-        <g
-          id="belt-tip"
-          ref={tipRef}
-          style={{
-            transformBox: "fill-box",
-            transformOrigin: "80% 50%",
-          }}
-        >
             <rect
               x="357"
-              y="55"
+              y="35"
               width="655"
               height="320"
               fill="#ff0000"
+              ref={tipRef}
             />
-        </g>
+            <rect
+              x="387"
+              y="25"
+              width="55"
+              height="360"
+              fill="#ffffff"
+              ref={tipRef}
+            />
+            <rect
+              x="907"
+              y="25"
+              width="55"
+              height="360"
+              fill="#ffffff"
+              ref={tipRef}
+            />            
       </svg>
     </div>
   );
