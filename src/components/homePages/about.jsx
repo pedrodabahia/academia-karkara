@@ -44,7 +44,7 @@ export default function About(){
 
 
     <div
-      className="relative w-[260px] h-[320px] sm:w-[260px] sm:h-[340px] lg:w-[300px] lg:h-[400px] shrink-0"
+      className="relative w-[260px] h-[320px] sm:w-[310px] sm:h-[390px] lg:w-[350px] lg:h-[450px] shrink-0"
         onMouseEnter={() => setFrente(false)}
         onMouseLeave={() => setFrente(true)}
         onTouchStart={() => setFrente(false)}

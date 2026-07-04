@@ -4,7 +4,7 @@ export const COMPETIDORES = [
     id: "l1",
     name: "Danilo Morais",
     category: "MMA",
-    title: "Campeão Estadual 2023",
+    title: "Campeão Internacional Ragnarok 2025",
     image:
       "/image/competidores/danilo.webp",
   },
@@ -12,7 +12,7 @@ export const COMPETIDORES = [
     id: "l2",
     name: "Luiza Lima",
     category: "MMA",
-    title: "Vice-campeã Nacional 2023",
+    title: "Campeã Internacional Ragnarok 2025",
     image:
       "/image/competidores/luiza.webp",
   },
@@ -20,14 +20,14 @@ export const COMPETIDORES = [
     id: "l3",
     name: "Pedro Matos",
     category: "Jiu Jitsu",
-    title: "3x Campeão Regional",
+    title: "Campeão Baiano 2024",
     image:
       "/image/competidores/pedro.webp",
   },
   {
     id: "l4",
     name: "Marciely Soares",
-    category: "Muay Thai",
+    category: "3x Campeã XGLOVER",
     title: "Campeão Baiano 2024",
     image:
       "/image/competidores/marciely.webp",
@@ -36,7 +36,7 @@ export const COMPETIDORES = [
     id: "l5",
     name: "Samuel",
     category: "Muay Thai",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Baiano 2026",
     image:
       "/image/competidores/samuel.webp",
   },
@@ -44,7 +44,7 @@ export const COMPETIDORES = [
     id: "l6",
     name: "André Lopes",
     category: "Boxe",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Copa Karkará 2026",
     image:
       "/image/competidores/andre.webp",
   },
@@ -52,7 +52,7 @@ export const COMPETIDORES = [
     id: "l7",
     name: "Elias Porto",
     category: "Boxe",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Copa Karkará 2026",
     image:
       "/image/competidores/elias.webp",
   },
@@ -60,7 +60,7 @@ export const COMPETIDORES = [
     id: "l8",
     name: "Gebson Santos",
     category: "Muay Thai",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Combate Prime 2024",
     image:
       "/image/competidores/gebson.webp",
   },
@@ -68,23 +68,15 @@ export const COMPETIDORES = [
     id: "l9",
     name: "Paulo Nascimento",
     category: "Boxe",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Copa Karkará 2026",
     image:
       "/image/competidores/paulo.webp",
-  },
-    {
-    id: "l10",
-    name: "Theo",
-    category: "Boxe",
-    title: "Campeã Nordestina 2022",
-    image:
-      "/image/competidores/theo.webp",
   },
     {
     id: "l11",
     name: "Benícios",
     category: "Muay Thai",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Copa Karkará 2026",
     image:
       "/image/competidores/benicios.webp",
   },
@@ -92,7 +84,7 @@ export const COMPETIDORES = [
     id: "l12",
     name: "Rafael Xavier",
     category: "Muay Thai",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Copa Karkará 2026",
     image:
       "/image/competidores/rafael.webp",
   },
@@ -100,7 +92,7 @@ export const COMPETIDORES = [
     id: "l13",
     name: "Mario Lopes",
     category: "Muay Thai",
-    title: "Campeã Nordestina 2022",
+    title: "Campeão Combate Prime 2025",
     image:
       "/image/competidores/romario.webp",
   }
