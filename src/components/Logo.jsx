@@ -14,7 +14,7 @@ const Logo = forwardRef(function Logo(_, ref) {
 <svg
    width="1210px"
    height="1097px"
-   viewBox="50 40 110 150"
+   viewBox="50 35 110 150"
    version="1.1"
    fill="#ffffff">
             <path

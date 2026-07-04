@@ -20,7 +20,7 @@ export default function Hero(){
         <section className="w-full min-h-screen text-center overflow-hidden">
             <div
             onMouseMove={handleMouseMove}
-            className="relative overflow-hidden pt-55 sm:pt-56 lg:pt-80 pb-24 text-white min-h-screen bg-[position:0_40%] bg-no-repeat bg-cover">
+            className="relative overflow-hidden pt-45 sm:pt-56 lg:pt-80 pb-24 text-white min-h-screen bg-[position:0_40%] bg-no-repeat bg-cover">
             <div className="text-white h-full w-full opacity-30 bg-no-repeat bg-cover absolute z-0 top-0" style={{backgroundImage : "url('/image/gradMuay1.webp')"}}></div>
             <div className="absolute inset-0" style={{background: `radial-gradient(
             circle 500px at ${pos.x}% ${pos.y}%,
