@@ -15,6 +15,12 @@ export default function Hero(){
 
         setPos({x,y})
     }
+    function abrirWhatsApp(mensagem = '') {
+  const numero = '5573999649599'; // 55 (Brasil) + DDD + número
+  const texto = encodeURIComponent(mensagem);
+  const url = `https://wa.me/${numero}${texto ? `?text=${texto}` : ''}`;
+  window.open(url, '_blank');
+}
 
     return(
         <section className="w-full min-h-screen text-center overflow-hidden">
@@ -47,12 +53,14 @@ export default function Hero(){
 
                 <div className="mt-8 flex flex-row items-center justify-center gap-2 sm:gap-4 w-full">
                     <button
+                    onClick={abrirWhatsApp("Olá, vim pelo site da karkará")}
                         type="button"
                         className="w-auto px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-blue-600 border border-blue-600 text-white text-[11px] sm:text-sm uppercase tracking-wide font-display transition-transform duration-300 hover:scale-[1.03]"
                     >
                         Conhecer a academia
                     </button>
                     <button
+                    onClick={abrirWhatsApp("Olá, vim pelo site da karkará")}
                         type="button"
                         className="w-auto px-4 py-2 sm:px-6 sm:py-3 rounded-full border border-blue-600 text-blue-400 text-[11px] sm:text-sm uppercase tracking-wide font-display transition-transform duration-300 hover:scale-[1.03]"
                     >

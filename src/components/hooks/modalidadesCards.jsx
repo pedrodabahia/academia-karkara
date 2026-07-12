@@ -13,6 +13,7 @@ const modalities = [
 ];
 
 function Card({ name, Icon, image, delay }) {
+
   return (
     <div
       className="fm-card group relative w-full aspect-[4/3] sm:aspect-square overflow-hidden rounded-[6px] border border-white/10 bg-gradient-to-b from-blue-900/50 to-blue-950/20 px-4 py-6 sm:px-6 sm:py-10 flex flex-col items-center justify-center gap-4 sm:gap-6 cursor-pointer transition-transform duration-300 ease-out hover:scale-[1.06] hover:border-blue-600/40 hover:shadow-[0_15px_35px_-10px_rgba(0,0,0,0.7)] hover:z-20"
@@ -46,6 +47,12 @@ function Card({ name, Icon, image, delay }) {
 }
 
 export default function FightModalities() {
+        function abrirWhatsApp(mensagem = '') {
+  const numero = '5573999649599'; // 55 (Brasil) + DDD + número
+  const texto = encodeURIComponent(mensagem);
+  const url = `https://wa.me/${numero}${texto ? `?text=${texto}` : ''}`;
+  window.open(url, '_blank');
+}
   return (
 
     <div className="w-full bg-zinc-950 px-2 sm:px-8">
@@ -72,7 +79,7 @@ export default function FightModalities() {
         }
       `}</style>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 max-w-6xl mx-auto">
+      <div onClick={abrirWhatsApp("Olá, vim pelo site da karkará")} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 max-w-6xl mx-auto">
         {modalities.map((m, i) => (
           <Card key={m.name} name={m.name} Icon={m.Icon} image={m.image} delay={i * 0.45} />
         ))}
